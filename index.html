@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    
+        <div class="image-section">
+            <div class="banner">
+                <img id="banner-img" src="odin-lined.png" alt="Odin image">Odin
+            </div>
+            <div class="img-description">
+            Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="right-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</div>
+            <div class="right-text">You <i>know</i> you want to.</div>
+            <form action="" id="account-info-form">
+                <fieldset class="allInputs">
+                    <legend>Let's do this!</legend>
+                    <div class="labelInputPair">
+                        <div>
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div>
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>  
+                    <div class="labelInputPair">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </div>
+                    <div class="labelInputPair">
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                            <p id="error-message" class="error-message">*Passwords do not match</p>
+                        </div>
+                        <div>
+                            <label for="confirmPW">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPW" name="confirmPW" required>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <button type="submit" form="account-info-form">Create Account</button>
+            <div class="right-bottom">Already have an account? <a class="login" href="">Log in</a></div>
+        </div>
+    
+</body>
+</html>
